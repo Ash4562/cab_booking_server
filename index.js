@@ -10,6 +10,7 @@ app.use(cors({
     origin: [
         "http://localhost:5173",
         "http://localhost:5174",
+        "https://cab-contactus-1.onrender.com",
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
