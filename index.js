@@ -18,11 +18,11 @@ app.use(cors({
 // shop
 app.use("/cab/contactus", require("./routes/ContantusRoutes"));
 app.use("/cab/gitIntouch", require("./routes/GitintouchRoutes"));
-
-mongoose.connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-})
+// Driver
+app.use("/driver/auth", require("./routes/driver/driverAuthRoutes"));
+// user
+app.use("/user/auth", require("./routes/user/UserController"));
+mongoose.connect(process.env.MONGO_URL)
   .then(() => {
     console.log('MongoDB connected');
     const PORT = process.env.PORT || 5000;
