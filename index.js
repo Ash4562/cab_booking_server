@@ -11,6 +11,7 @@ app.use(cors({
         "http://localhost:5173",
         "http://localhost:5174",
         "https://cab-contactus-1.onrender.com",
+        "https://drvvy.com"
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
